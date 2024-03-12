@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Keshav Mowar">
+
+<title>Keshav’s R Journal</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="KeshavRDiary_files/libs/clipboard/clipboard.min.js"></script>
+<script src="KeshavRDiary_files/libs/quarto-html/quarto.js"></script>
+<script src="KeshavRDiary_files/libs/quarto-html/popper.min.js"></script>
+<script src="KeshavRDiary_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="KeshavRDiary_files/libs/quarto-html/anchor.min.js"></script>
+<link href="KeshavRDiary_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="KeshavRDiary_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="KeshavRDiary_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="KeshavRDiary_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="KeshavRDiary_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<style>
+
+      .quarto-title-block .quarto-title-banner h1,
+      .quarto-title-block .quarto-title-banner h2,
+      .quarto-title-block .quarto-title-banner h3,
+      .quarto-title-block .quarto-title-banner h4,
+      .quarto-title-block .quarto-title-banner h5,
+      .quarto-title-block .quarto-title-banner h6
+      {
+        color: white;
+      }
+
+      .quarto-title-block .quarto-title-banner {
+        color: white;
+      }
+</style>
+
+
+</head>
+
+<body class="fullcontent">
+
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Keshav’s R Journal</h1>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Keshav Mowar </p>
+            </div>
+    </div>
+      
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+<section id="date-2nd-february-2024" class="level1">
+<h1>Date:-2nd February 2024</h1>
+</section>
+<section id="time-1123-pm" class="level1">
+<h1>Time:-11:23 PM</h1>
+<section id="trying-out-some-r-code-from-the-lab-videos" class="level2">
+<h2 class="anchored" data-anchor-id="trying-out-some-r-code-from-the-lab-videos">Trying out some R code from the lab videos</h2>
+<p>Since R is a scripting language and I have pretty much gotten used to compiled languages it was a little difficult getting used to running separate lines of code and directing it to the console to get the output.</p>
+<p>For now I have tried below lines of code just to get myself used to the console:-</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>a <span class="ot">&lt;-</span> <span class="dv">5</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>b <span class="ot">&lt;-</span> <span class="dv">6</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>z <span class="ot">&lt;-</span> a <span class="sc">+</span> b</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>z <span class="ot">&lt;-</span> z <span class="sc">+</span> <span class="dv">11</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>z</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 22</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="date-3rd-february-2024" class="level1">
+<h1>Date:-3rd February 2024</h1>
+</section>
+<section id="time-1004-pm" class="level1">
+<h1>Time:-10:04 PM</h1>
+<section id="attempting-to-code-a-calculator-in-r" class="level2">
+<h2 class="anchored" data-anchor-id="attempting-to-code-a-calculator-in-r">Attempting to code a calculator in R</h2>
+<section id="i-tried-making-a-simple-calculator-using-r-but-failed-miserably.-i-borrowed-some-code-from-httpswww.geeksforgeeks.orgtaking-input-from-user-in-r-programming" class="level3">
+<h3 class="anchored" data-anchor-id="i-tried-making-a-simple-calculator-using-r-but-failed-miserably.-i-borrowed-some-code-from-httpswww.geeksforgeeks.orgtaking-input-from-user-in-r-programming">I tried making a simple calculator using R but failed miserably. I borrowed some code from <a href="https://www.geeksforgeeks.org/taking-input-from-user-in-r-programming/" class="uri">https://www.geeksforgeeks.org/taking-input-from-user-in-r-programming/</a></h3>
+<p>I got a warning message when I tried to convert my input from string to a number</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">#taking the below code from this URL https://www.geeksforgeeks.org/taking-input-from-user-in-r-programming/</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>var <span class="ot">&lt;-</span> <span class="fu">readline</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>var <span class="ot">&lt;-</span> <span class="fu">as.integer</span>(var)</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>var</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] NA</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co">#building on above code to create a simple calculator</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>a <span class="ot">&lt;-</span> <span class="fu">readline</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>a <span class="ot">&lt;-</span> <span class="fu">as.integer</span>(var)</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>a</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] NA</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>b <span class="ot">&lt;-</span> <span class="fu">readline</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>b</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] ""</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>b <span class="ot">&lt;-</span> <span class="fu">as.integer</span>(var)</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>method_calc <span class="ot">&lt;-</span> <span class="fu">readline</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span>(method_calc<span class="sc">==</span><span class="st">"add"</span>){y <span class="ot">&lt;-</span> a<span class="sc">+</span>b}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<section id="unfortunately-my-attempt-to-build-a-calculator-has-to-be-postponed-as-i-might-have-to-learn-the-use-of-functions-and-if-else-statements-before-attempting-that.-i-will-try-it-very-soon." class="level5">
+<h5 class="anchored" data-anchor-id="unfortunately-my-attempt-to-build-a-calculator-has-to-be-postponed-as-i-might-have-to-learn-the-use-of-functions-and-if-else-statements-before-attempting-that.-i-will-try-it-very-soon.">unfortunately my attempt to build a calculator has to be postponed as i might have to learn the use of functions and if else statements before attempting that. I will try it very soon.</h5>
+</section>
+</section>
+</section>
+</section>
+<section id="date-8th-february-2024" class="level1">
+<h1>Date:-8th February 2024</h1>
+</section>
+<section id="time-931-am" class="level1">
+<h1>Time:-9:31 AM</h1>
+<section id="attempting-to-install-libraries-inside-quarto-in-order-to-run-the-assignment-code" class="level2">
+<h2 class="anchored" data-anchor-id="attempting-to-install-libraries-inside-quarto-in-order-to-run-the-assignment-code">Attempting to install libraries inside Quarto in order to run the Assignment code</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co">#installing the required packages. these are the packages I used in assignment 1 as well</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: load-packages</span></span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a><span class="co">#| warning: true</span></span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readr)</span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(scales)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Attaching package: 'scales'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following object is masked from 'package:readr':
+
+    col_factor</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Attaching package: 'dplyr'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following objects are masked from 'package:stats':
+
+    filter, lag</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following objects are masked from 'package:base':
+
+    intersect, setdiff, setequal, union</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyr)</span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(RColorBrewer)</span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a><span class="co">#commenting these out as they are causing error ---install.packages("tidyverse")</span></span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a><span class="co">#commenting these out as they are causing error ---install.packages("ggplot2")</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>The libraries which are included here help in data visualization like creating bar plots, scatter plots and bar graphs etc.</p>
+<p>Now we will see how to utilize these libraries for my data set and come up with some beautiful pie charts and bar graphs. A few of these libraries are used for plotting an the library called “RColorBrewer” is used for creating nice color palettes which then can be used for your graphs. I like this feature.</p>
+</section>
+</section>
+<section id="date-20th-february-2024" class="level1">
+<h1>Date:-20th February 2024</h1>
+</section>
+<section id="time-644-pm" class="level1">
+<h1>Time:-6:44 PM</h1>
+<section id="attempting-to-install-libraries-inside-quarto-in-order-to-run-the-assignment-code-1" class="level2">
+<h2 class="anchored" data-anchor-id="attempting-to-install-libraries-inside-quarto-in-order-to-run-the-assignment-code-1">Attempting to install libraries inside Quarto in order to run the Assignment code</h2>
+<section id="initially-i-was-getting-an-error-when-trying-to-use-the-install-function.-i-asked-copilot-for-the-reason-of-this-error" class="level5">
+<h5 class="anchored" data-anchor-id="initially-i-was-getting-an-error-when-trying-to-use-the-install-function.-i-asked-copilot-for-the-reason-of-this-error">Initially I was getting an error when trying to use the install function. I asked copilot for the reason of this error</h5>
+</section>
+<section id="missing-repository-configuration" class="level4">
+<h4 class="anchored" data-anchor-id="missing-repository-configuration">Missing Repository Configuration:</h4>
+<p>When you run install.packages(“tidyverse”), R needs to know where to find the package. By default, it tries to connect to CRAN, but you need to specify a mirror. To fix this, explicitly set the CRAN mirror by using the repos argument in the install.packages() function. For example: install.packages(“tidyverse”, repos = “<a href="http://cran.us.r-project.org%22">http://cran.us.r-project.org”)</a>)</p>
+<section id="so-to-sort-this-issue-i-replaced-the-original-install-function-with-the-example-given-above-and-now-the-functions-seem-to-be-working." class="level5">
+<h5 class="anchored" data-anchor-id="so-to-sort-this-issue-i-replaced-the-original-install-function-with-the-example-given-above-and-now-the-functions-seem-to-be-working.">So to sort this issue I replaced the original install function with the example given above and now the functions seem to be working.</h5>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co">#installing the required packages. these are the packages I used in assignment 1 as well</span></span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: load-packages</span></span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a><span class="co">#| warning: true</span></span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
+<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readr)</span>
+<span id="cb22-7"><a href="#cb22-7" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(scales)</span>
+<span id="cb22-8"><a href="#cb22-8" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb22-9"><a href="#cb22-9" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb22-10"><a href="#cb22-10" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyr)</span>
+<span id="cb22-11"><a href="#cb22-11" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(RColorBrewer)</span>
+<span id="cb22-12"><a href="#cb22-12" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"tidyverse"</span>, <span class="at">repos =</span> <span class="st">"http://cran.us.r-project.org"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>package 'tidyverse' successfully unpacked and MD5 sums checked
+
+The downloaded binary packages are in
+    C:\Users\Keshav\AppData\Local\Temp\RtmpYrl8Cr\downloaded_packages</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"ggplot2"</span>, <span class="at">repos =</span> <span class="st">"http://cran.us.r-project.org"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'ggplot2' is in use and will not be installed</code></pre>
+</div>
+</div>
+</section>
+</section>
+</section>
+</section>
+<section id="date-21st-february-2024" class="level1">
+<h1>Date:-21st February 2024</h1>
+</section>
+<section id="time-500-pm" class="level1">
+<h1>Time:-5:00 PM</h1>
+<section id="today-i-am-running-my-code-for-the-assignment-1-dataset." class="level2">
+<h2 class="anchored" data-anchor-id="today-i-am-running-my-code-for-the-assignment-1-dataset.">Today I am running my code for the assignment 1 dataset.</h2>
+<p>This includes multiple bar plots and pie charts showcasing different aspects of the dataset.</p>
+<section id="now-lets-try-to-read-the-a-dataset-from-a-tsv-file.-these-kinds-of-files-have-table-separated-values.-this-particular-dataset-is-purely-categorical-data-and-it-has-divided-website-urls-into-different-categories-like-primary-category-and-secondary-category." class="level4">
+<h4 class="anchored" data-anchor-id="now-lets-try-to-read-the-a-dataset-from-a-tsv-file.-these-kinds-of-files-have-table-separated-values.-this-particular-dataset-is-purely-categorical-data-and-it-has-divided-website-urls-into-different-categories-like-primary-category-and-secondary-category.">Now lets try to read the a dataset from a tsv file. These kinds of files have table separated values. This particular dataset is purely categorical data and it has divided website URLS into different categories like Primary Category and Secondary Category.</h4>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">50</span>)</span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a><span class="co"># source for the below code https://readr.tidyverse.org/reference/read_delim.html</span></span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a><span class="co">#I noticed that the readtsv function has an option called "lazy" which helps reducing some extra configuration from the developer</span></span>
+<span id="cb26-6"><a href="#cb26-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-7"><a href="#cb26-7" aria-hidden="true" tabindex="-1"></a>cybersecdata1 <span class="ot">&lt;-</span> readr<span class="sc">::</span><span class="fu">read_tsv</span>(<span class="st">'classification.tsv'</span>, <span class="at">col_names =</span> <span class="cn">TRUE</span>,<span class="at">lazy=</span><span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Rows: 26909 Columns: 4
+── Column specification ────────────────────────────────────────────────────────
+Delimiter: "\t"
+chr (4): Primary Category, Secondary Category, Title, URL
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="co"># I am trying out sampling on this dataset just to see how the values are selected. I am taking only 500 records for this dataset</span></span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a><span class="co"># source for the below code https://www.digitalocean.com/community/tutorials/sample-in-r</span></span>
+<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a>cybersecdata1_sampled <span class="ot">&lt;-</span> <span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="fu">nrow</span>(cybersecdata1), <span class="dv">500</span>)</span>
+<span id="cb28-6"><a href="#cb28-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-7"><a href="#cb28-7" aria-hidden="true" tabindex="-1"></a><span class="co">#after the code is sampled</span></span>
+<span id="cb28-8"><a href="#cb28-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-9"><a href="#cb28-9" aria-hidden="true" tabindex="-1"></a>cybersecdata1_final <span class="ot">&lt;-</span> cybersecdata1[cybersecdata1_sampled,]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: One or more parsing issues, call `problems()` on your data frame for details,
+e.g.:
+  dat &lt;- vroom(...)
+  problems(dat)</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>cybersecdata1_final</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 500 × 4
+   `Primary Category`           `Secondary Category`               Title   URL  
+   &lt;chr&gt;                        &lt;chr&gt;                              &lt;chr&gt;   &lt;chr&gt;
+ 1 Government, Law &amp; Politics   European Parliament Elections 2009 Animal… http…
+ 2 Government, Law &amp; Politics   Credit Crunch                      Debt o… http…
+ 3 Medicine &amp; Health            Conditions and Diseases            Everym… http…
+ 4 Arts &amp; Humanities            Geography                          Go-Geo… http…
+ 5 Arts &amp; Humanities            Local History                      GELLIG… http…
+ 6 Government, Law &amp; Politics   Credit Crunch                      Davent… http…
+ 7 Digital Society              Blogs                              Histor… http…
+ 8 Arts &amp; Humanities            Live Art                           London… http…
+ 9 Business, Economy &amp; Industry Credit Crunch                      London… http…
+10 Society &amp; Culture            Sports and Recreation              Wenloc… http…
+# ℹ 490 more rows</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Next I group the dataset by the Primary Category column name as it will give an interesting insight. Primary Categories basically show which kind of industries or domains a website belongs to </span></span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a><span class="co"># source for the below code https://www.linkedin.com/pulse/usage-groupby-dplyr-r-tuhin-tapadar/</span></span>
+<span id="cb32-4"><a href="#cb32-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-5"><a href="#cb32-5" aria-hidden="true" tabindex="-1"></a>group_cybersecdata1 <span class="ot">&lt;-</span> cybersecdata1_final <span class="sc">%&gt;%</span> <span class="fu">group_by</span>(<span class="st">`</span><span class="at">Primary Category</span><span class="st">`</span>)</span>
+<span id="cb32-6"><a href="#cb32-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-7"><a href="#cb32-7" aria-hidden="true" tabindex="-1"></a><span class="co">#After grouping , I also count the number of times a particular category comes up by using the name_count variable. I also summarize the whole output to get a brief detail on how the tibble looks</span></span>
+<span id="cb32-8"><a href="#cb32-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-9"><a href="#cb32-9" aria-hidden="true" tabindex="-1"></a>group_cybersecdata1_sum <span class="ot">&lt;-</span> <span class="fu">summarise</span>(group_cybersecdata1, <span class="at">name_count =</span> <span class="fu">n</span>())</span>
+<span id="cb32-10"><a href="#cb32-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-11"><a href="#cb32-11" aria-hidden="true" tabindex="-1"></a><span class="co">#I used below code to order the tibble in decreasing order so that we can see which category had the most websites. The reason for doing this is to understand the adaptation of web technology by different kinds of industries.</span></span>
+<span id="cb32-12"><a href="#cb32-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-13"><a href="#cb32-13" aria-hidden="true" tabindex="-1"></a><span class="co">#https://bookdown.org/ndphillips/YaRrr/order-sorting-data.html</span></span>
+<span id="cb32-14"><a href="#cb32-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-15"><a href="#cb32-15" aria-hidden="true" tabindex="-1"></a>group_cybersecdata1_ordered <span class="ot">&lt;-</span> group_cybersecdata1_sum[<span class="fu">order</span>(group_cybersecdata1_sum<span class="sc">$</span>name_count, <span class="at">decreasing =</span> <span class="cn">TRUE</span>),]</span>
+<span id="cb32-16"><a href="#cb32-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-17"><a href="#cb32-17" aria-hidden="true" tabindex="-1"></a><span class="co">#After ordering I decide to take the top 7 categories which come up. The reason for doing this is because they are the most populated categories and it makes it easier to a statistic visualization of the data.</span></span>
+<span id="cb32-18"><a href="#cb32-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-19"><a href="#cb32-19" aria-hidden="true" tabindex="-1"></a>groupcybersecdata1_ordered_sample_final <span class="ot">&lt;-</span> <span class="fu">head</span>(group_cybersecdata1_ordered,<span class="dv">7</span>)</span>
+<span id="cb32-20"><a href="#cb32-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-21"><a href="#cb32-21" aria-hidden="true" tabindex="-1"></a>gd2 <span class="ot">&lt;-</span> groupcybersecdata1_ordered_sample_final</span>
+<span id="cb32-22"><a href="#cb32-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-23"><a href="#cb32-23" aria-hidden="true" tabindex="-1"></a><span class="co">#Once the final datagram is ready which is "gd2". I took a decision to draw a pie chart for this dataset. I very well know that pie charts are not really a good way to show data visualization but since this is a non numerical dataset and I am new to R, this is the simplest way I could find to show the dataset.</span></span>
+<span id="cb32-24"><a href="#cb32-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-25"><a href="#cb32-25" aria-hidden="true" tabindex="-1"></a><span class="co">#To make a simple pie chart , we have to initialize a few variables. One of them will be the content of the pie chart(could be numbers or percentage etc) and the other will be the label of the section.</span></span>
+<span id="cb32-26"><a href="#cb32-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-27"><a href="#cb32-27" aria-hidden="true" tabindex="-1"></a><span class="co">#name of the primary category</span></span>
+<span id="cb32-28"><a href="#cb32-28" aria-hidden="true" tabindex="-1"></a>namec <span class="ot">&lt;-</span> gd2<span class="sc">$</span>name_count</span>
+<span id="cb32-29"><a href="#cb32-29" aria-hidden="true" tabindex="-1"></a><span class="co">#number of websites comprising this primary category in percentage</span></span>
+<span id="cb32-30"><a href="#cb32-30" aria-hidden="true" tabindex="-1"></a>lbls <span class="ot">&lt;-</span> gd2<span class="sc">$</span><span class="st">`</span><span class="at">Primary Category</span><span class="st">`</span></span>
+<span id="cb32-31"><a href="#cb32-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-32"><a href="#cb32-32" aria-hidden="true" tabindex="-1"></a><span class="co">#setting the color pallette. </span></span>
+<span id="cb32-33"><a href="#cb32-33" aria-hidden="true" tabindex="-1"></a>myColorPal <span class="ot">&lt;-</span> <span class="fu">brewer.pal</span>(<span class="dv">5</span>, <span class="st">"Set3"</span>) </span>
+<span id="cb32-34"><a href="#cb32-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-35"><a href="#cb32-35" aria-hidden="true" tabindex="-1"></a><span class="co">#bar graph source code below</span></span>
+<span id="cb32-36"><a href="#cb32-36" aria-hidden="true" tabindex="-1"></a><span class="co">#https://r-graph-gallery.com/131-pie-plot-with-r.html</span></span>
+<span id="cb32-37"><a href="#cb32-37" aria-hidden="true" tabindex="-1"></a><span class="co">#Finaly executing the pie chart</span></span>
+<span id="cb32-38"><a href="#cb32-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-39"><a href="#cb32-39" aria-hidden="true" tabindex="-1"></a><span class="fu">pie</span>(namec,<span class="at">labels =</span> <span class="fu">paste</span>(lbls, <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>, <span class="fu">percent</span>(namec <span class="sc">/</span> <span class="fu">sum</span>(namec))),<span class="at">col=</span>myColorPal)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="KeshavRDiary_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section id="date-25th-february" class="level1">
+<h1>Date:-25th February</h1>
+<p>#Time:-10:33 PM ## Attempting the work on my second dataset which I used in my assignment 1.</p>
+<p>###Dataset:- https://datadrivensecurity.info/blog/pages/dds-dataset-collection.html</p>
+<section id="lets-talk-about-this-dataset-a-little-bit.-the-data-which-is-shown-here-is-taken-from-several-honeypot-servers-residing-in-different-geographical-regions.-honeypot-servers-are-usually-operated-by-companies-entice-hackers-and-threat-actors-to-attack-their-server.keeping-in-mind-that-the-threat-actor-might-think-that-the-server-is-vulnerable-but-in-reality-it-is-just-a-way-to-threat-actors-and-analyze-their-approach-to-prevent-a-real-cyber-attack." class="level4">
+<h4 class="anchored" data-anchor-id="lets-talk-about-this-dataset-a-little-bit.-the-data-which-is-shown-here-is-taken-from-several-honeypot-servers-residing-in-different-geographical-regions.-honeypot-servers-are-usually-operated-by-companies-entice-hackers-and-threat-actors-to-attack-their-server.keeping-in-mind-that-the-threat-actor-might-think-that-the-server-is-vulnerable-but-in-reality-it-is-just-a-way-to-threat-actors-and-analyze-their-approach-to-prevent-a-real-cyber-attack.">Lets talk about this dataset a little bit. The data which is shown here is taken from several honeypot servers residing in different geographical regions. Honeypot servers are usually operated by companies entice hackers and threat actors to attack their server.Keeping in mind that the threat actor might think that the server is vulnerable but in reality it is just a way to threat actors and analyze their approach to prevent a real cyber attack.</h4>
+</section>
+<section id="hence-honeypot-servers-are-incredibly-useful-for-cyber-industry-and-cyber-defense-in-general.-one-thing-honeypot-servers-do-is-that-they-generate-a-lot-of-data.only-because-there-are-so-many-data-transmissions-happening.-this-data-definitely-could-give-us-valuable-insights." class="level4">
+<h4 class="anchored" data-anchor-id="hence-honeypot-servers-are-incredibly-useful-for-cyber-industry-and-cyber-defense-in-general.-one-thing-honeypot-servers-do-is-that-they-generate-a-lot-of-data.only-because-there-are-so-many-data-transmissions-happening.-this-data-definitely-could-give-us-valuable-insights.">Hence honeypot servers are incredibly useful for cyber industry and cyber defense in general. One thing honeypot servers do is that they generate a lot of data.Only because there are so many data transmissions happening. This data definitely could give us valuable insights.</h4>
+<section id="the-data-is-depicted-in-a-nice-uniform-format.-the-ip-addresses-are-converted-to-long-format-to-make-it-easier-to-read-and-operate.-other-columns-include-source-and-destination-server-region-names.-let-see-what-how-we-can-create-a-few-visualizations-using-this-data-set." class="level5">
+<h5 class="anchored" data-anchor-id="the-data-is-depicted-in-a-nice-uniform-format.-the-ip-addresses-are-converted-to-long-format-to-make-it-easier-to-read-and-operate.-other-columns-include-source-and-destination-server-region-names.-let-see-what-how-we-can-create-a-few-visualizations-using-this-data-set.">The data is depicted in a nice uniform format. The ip addresses are converted to long format to make it easier to read and operate. Other columns include source and destination server region names. Let see what how we can create a few visualizations using this data set.</h5>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="co">#I have taken this dataset to showcase some of the data transmission which happens on honeypot servers and get some insights </span></span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a><span class="co">#the second dataset is taken from https://datadrivensecurity.info/blog/pages/dds-dataset-collection.html</span></span>
+<span id="cb33-4"><a href="#cb33-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-5"><a href="#cb33-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-6"><a href="#cb33-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-7"><a href="#cb33-7" aria-hidden="true" tabindex="-1"></a><span class="co">#reading csv</span></span>
+<span id="cb33-8"><a href="#cb33-8" aria-hidden="true" tabindex="-1"></a>cybersecdata2 <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"marx.csv"</span>)</span>
+<span id="cb33-9"><a href="#cb33-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-10"><a href="#cb33-10" aria-hidden="true" tabindex="-1"></a><span class="co">#summary and head command just to get a sense of data</span></span>
+<span id="cb33-11"><a href="#cb33-11" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(cybersecdata2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   datetime             host                src               proto          
+ Length:451581      Length:451581      Min.   :1.678e+07   Length:451581     
+ Class :character   Class :character   1st Qu.:1.169e+09   Class :character  
+ Mode  :character   Mode  :character   Median :2.031e+09   Mode  :character  
+                                       Mean   :2.155e+09                     
+                                       3rd Qu.:3.165e+09                     
+                                       Max.   :3.758e+09                     
+                                                                             
+      type             spt             dpt       
+ Min.   : 0.0     Min.   :    0   Min.   :    0  
+ 1st Qu.: 8.0     1st Qu.: 6000   1st Qu.:  445  
+ Median : 8.0     Median : 6000   Median : 1433  
+ Mean   : 7.5     Mean   :18685   Mean   : 6684  
+ 3rd Qu.: 8.0     3rd Qu.:33461   3rd Qu.: 3389  
+ Max.   :13.0     Max.   :65535   Max.   :65500  
+ NA's   :406770   NA's   :44811   NA's   :44811  </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(cybersecdata2,<span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>              datetime              host        src proto type   spt  dpt
+1  2013-03-03 21:53:59    groucho-oregon 1032051418   TCP   NA  6000 1433
+2  2013-03-03 21:57:01    groucho-oregon 1347834426   UDP   NA  5270 5060
+3  2013-03-03 21:58:10    groucho-oregon 2947856490   TCP   NA  2489 1080
+4  2013-03-03 21:58:09   groucho-us-east  841842716   UDP   NA 43235 1900
+5  2013-03-03 21:58:20 groucho-singapore 3587648279   TCP   NA 56577   80
+6  2013-03-03 21:58:41     groucho-tokyo 3323217250   TCP   NA 32628 2323
+7  2013-03-03 21:59:36    groucho-oregon 3730416887   TCP   NA  6000 1433
+8  2013-03-03 22:07:05 groucho-singapore 3738622573   TCP   NA  6000 3306
+9  2013-03-03 22:12:02    groucho-oregon 3683919430   TCP   NA  6000 1433
+10 2013-03-03 22:14:19 groucho-singapore 1007884304   TCP   NA  6000 1433</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="co">#The date format is a bit weird so I decided to make it simpler.</span></span>
+<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a>cybersecdata2<span class="sc">$</span>datetime<span class="ot">&lt;-</span> <span class="fu">as.Date</span>(cybersecdata2<span class="sc">$</span>datetime, <span class="at">format =</span> <span class="st">"%Y-%m-%d"</span>)</span>
+<span id="cb37-4"><a href="#cb37-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-5"><a href="#cb37-5" aria-hidden="true" tabindex="-1"></a><span class="co">#dataset after changing date format</span></span>
+<span id="cb37-6"><a href="#cb37-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-7"><a href="#cb37-7" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(cybersecdata2,<span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>     datetime              host        src proto type   spt  dpt
+1  2013-03-03    groucho-oregon 1032051418   TCP   NA  6000 1433
+2  2013-03-03    groucho-oregon 1347834426   UDP   NA  5270 5060
+3  2013-03-03    groucho-oregon 2947856490   TCP   NA  2489 1080
+4  2013-03-03   groucho-us-east  841842716   UDP   NA 43235 1900
+5  2013-03-03 groucho-singapore 3587648279   TCP   NA 56577   80
+6  2013-03-03     groucho-tokyo 3323217250   TCP   NA 32628 2323
+7  2013-03-03    groucho-oregon 3730416887   TCP   NA  6000 1433
+8  2013-03-03 groucho-singapore 3738622573   TCP   NA  6000 3306
+9  2013-03-03    groucho-oregon 3683919430   TCP   NA  6000 1433
+10 2013-03-03 groucho-singapore 1007884304   TCP   NA  6000 1433</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="co">#lets sample the data to get fewer records</span></span>
+<span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a>cybersecdata2_sampled<span class="ot">&lt;-</span> <span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="fu">nrow</span>(cybersecdata2), <span class="dv">5000</span>)</span>
+<span id="cb39-3"><a href="#cb39-3" aria-hidden="true" tabindex="-1"></a>cybersecdata2_final <span class="ot">&lt;-</span> cybersecdata2[cybersecdata2_sampled,]</span>
+<span id="cb39-4"><a href="#cb39-4" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(cybersecdata2_final,<span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>         datetime              host        src proto type   spt   dpt
+197913 2013-06-05     groucho-tokyo 3223748177   TCP   NA  1967   445
+447449 2013-09-06      zeppo-norcal 3736745009   TCP   NA  6000  8080
+313227 2013-07-24     groucho-tokyo   45792730   UDP   NA 10100  2193
+422949 2013-08-27 groucho-singapore 1033063135   TCP   NA  6000  3306
+66963  2013-04-08   groucho-us-east 1914917414   UDP   NA 14702 54521
+138951 2013-05-10     groucho-tokyo 2992298268   TCP   NA  3441   445
+384370 2013-08-18        groucho-sa 1017973655   TCP   NA  6000  7777
+93426  2013-04-20        groucho-eu 2953454577   TCP   NA 27407  9943
+336694 2013-07-30 groucho-singapore 1313866355   TCP   NA  3901    23
+272999 2013-07-09 groucho-singapore 3417478163  ICMP    8    NA    NA</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="co">#grouping the hosts by region and taking their counts.for this analysis I decided to group servers by their region. this will tell us how many data transmissions happened in which region.</span></span>
+<span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-3"><a href="#cb41-3" aria-hidden="true" tabindex="-1"></a>hosts_groupby <span class="ot">&lt;-</span> cybersecdata2_final <span class="sc">%&gt;%</span> <span class="fu">group_by</span>(host)</span>
+<span id="cb41-4"><a href="#cb41-4" aria-hidden="true" tabindex="-1"></a>hosts_sum <span class="ot">&lt;-</span> <span class="fu">summarise</span>(hosts_groupby, <span class="at">name_count =</span> <span class="fu">n</span>())</span>
+<span id="cb41-5"><a href="#cb41-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-6"><a href="#cb41-6" aria-hidden="true" tabindex="-1"></a><span class="co">#plotting a bar plot for showcasing server location and the number of servers in each location</span></span>
+<span id="cb41-7"><a href="#cb41-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-8"><a href="#cb41-8" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(hosts_sum, <span class="fu">aes</span>(<span class="at">x =</span> hosts_sum<span class="sc">$</span>host, <span class="at">y =</span> hosts_sum<span class="sc">$</span>name_count)) <span class="sc">+</span></span>
+<span id="cb41-9"><a href="#cb41-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">stat =</span> <span class="st">"identity"</span>, <span class="at">fill =</span> <span class="st">"purple"</span>) <span class="sc">+</span>  <span class="co"># Bar plot with identity statistic</span></span>
+<span id="cb41-10"><a href="#cb41-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Geographical region of Host servers"</span>, <span class="at">y =</span> <span class="st">"Number of Hosts"</span>) <span class="sc">+</span>  <span class="co"># Labels for axes</span></span>
+<span id="cb41-11"><a href="#cb41-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggtitle</span>(<span class="st">"Bar Plot of regional Honeypot hosts vs. Number of hosts in particular region"</span>) <span class="sc">+</span>  <span class="co"># Title for the plot</span></span>
+<span id="cb41-12"><a href="#cb41-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Use of `hosts_sum$host` is discouraged.
+ℹ Use `host` instead.</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Use of `hosts_sum$name_count` is discouraged.
+ℹ Use `name_count` instead.</code></pre>
+</div>
+<div class="cell-output-display">
+<p><img src="KeshavRDiary_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid" width="672"></p>
+</div>
+<div class="sourceCode cell-code" id="cb44"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="co">#below visualizations will show simple freququncy of data transmission in terms of ports and protocols. for example which protocol was high frequency etc.</span></span>
+<span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a><span class="co">#plotting a histogram to show the relation between source port number ranges and their values</span></span>
+<span id="cb44-3"><a href="#cb44-3" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(cybersecdata2_final<span class="sc">$</span>spt, </span>
+<span id="cb44-4"><a href="#cb44-4" aria-hidden="true" tabindex="-1"></a>     <span class="at">main =</span> <span class="st">"Frequency of source ports probed in the honeypot servers"</span>,</span>
+<span id="cb44-5"><a href="#cb44-5" aria-hidden="true" tabindex="-1"></a>     <span class="at">xlab =</span> <span class="st">"Port Number Range"</span>,</span>
+<span id="cb44-6"><a href="#cb44-6" aria-hidden="true" tabindex="-1"></a>     <span class="at">border =</span> <span class="st">"purple"</span>, </span>
+<span id="cb44-7"><a href="#cb44-7" aria-hidden="true" tabindex="-1"></a>     <span class="at">col =</span> <span class="st">"orange"</span>,)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="KeshavRDiary_files/figure-html/unnamed-chunk-6-2.png" class="img-fluid" width="672"></p>
+</div>
+<div class="sourceCode cell-code" id="cb45"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a><span class="co">#plotting a histogram to show the relation between destination port number ranges and their values</span></span>
+<span id="cb45-2"><a href="#cb45-2" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(cybersecdata2_final<span class="sc">$</span>dpt, </span>
+<span id="cb45-3"><a href="#cb45-3" aria-hidden="true" tabindex="-1"></a>     <span class="at">main =</span> <span class="st">"Frequency of destination ports probed in the honeypot servers"</span>,</span>
+<span id="cb45-4"><a href="#cb45-4" aria-hidden="true" tabindex="-1"></a>     <span class="at">xlab =</span> <span class="st">"Port Number Range"</span>,</span>
+<span id="cb45-5"><a href="#cb45-5" aria-hidden="true" tabindex="-1"></a>     <span class="at">border =</span> <span class="st">"pink"</span>, </span>
+<span id="cb45-6"><a href="#cb45-6" aria-hidden="true" tabindex="-1"></a>     <span class="at">col =</span> <span class="st">"green"</span>,)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="KeshavRDiary_files/figure-html/unnamed-chunk-6-3.png" class="img-fluid" width="672"></p>
+</div>
+<div class="sourceCode cell-code" id="cb46"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a><span class="co">#now I am grouping different protocols and try to show their percentage share in the data collected using both a bar plot and a  pie chart</span></span>
+<span id="cb46-2"><a href="#cb46-2" aria-hidden="true" tabindex="-1"></a><span class="co">#PLEASE </span><span class="al">NOTE</span><span class="co"> THAT I AM NOT TAKING SAMPLED DATA HERE. I AM RUNNING THIS ON THE ORIGINAL DATASET.</span></span>
+<span id="cb46-3"><a href="#cb46-3" aria-hidden="true" tabindex="-1"></a>proto_groupby <span class="ot">&lt;-</span> cybersecdata2 <span class="sc">%&gt;%</span> <span class="fu">group_by</span>(proto)</span>
+<span id="cb46-4"><a href="#cb46-4" aria-hidden="true" tabindex="-1"></a>proto_sum <span class="ot">&lt;-</span> <span class="fu">summarise</span>(proto_groupby, <span class="at">num_proto =</span> <span class="fu">n</span>())</span>
+<span id="cb46-5"><a href="#cb46-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb46-6"><a href="#cb46-6" aria-hidden="true" tabindex="-1"></a><span class="co">#this is the bar plot showing the freuqncy of different 3 protocols</span></span>
+<span id="cb46-7"><a href="#cb46-7" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(proto_sum, <span class="fu">aes</span>(<span class="at">x =</span> proto_sum<span class="sc">$</span>proto, <span class="at">y =</span> proto_sum<span class="sc">$</span>num_proto)) <span class="sc">+</span></span>
+<span id="cb46-8"><a href="#cb46-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">stat =</span> <span class="st">"identity"</span>, <span class="at">fill =</span> <span class="st">"yellow"</span>) <span class="sc">+</span>  <span class="co"># Bar plot with identity statistic</span></span>
+<span id="cb46-9"><a href="#cb46-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Name of protocols"</span>, <span class="at">y =</span> <span class="st">"Frequency of occurence"</span>) <span class="sc">+</span>  <span class="co"># Labels for axes</span></span>
+<span id="cb46-10"><a href="#cb46-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggtitle</span>(<span class="st">"Protocols observed vs. frequency of them occuring"</span>) <span class="sc">+</span>  <span class="co"># Title for the plot</span></span>
+<span id="cb46-11"><a href="#cb46-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Use of `proto_sum$proto` is discouraged.
+ℹ Use `proto` instead.</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Use of `proto_sum$num_proto` is discouraged.
+ℹ Use `num_proto` instead.</code></pre>
+</div>
+<div class="cell-output-display">
+<p><img src="KeshavRDiary_files/figure-html/unnamed-chunk-6-4.png" class="img-fluid" width="672"></p>
+</div>
+<div class="sourceCode cell-code" id="cb49"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a><span class="co">#plotting a pie chart for the above scenario</span></span>
+<span id="cb49-2"><a href="#cb49-2" aria-hidden="true" tabindex="-1"></a>frequency_of_proto <span class="ot">&lt;-</span> proto_sum<span class="sc">$</span>num_proto</span>
+<span id="cb49-3"><a href="#cb49-3" aria-hidden="true" tabindex="-1"></a>proto_lbls <span class="ot">&lt;-</span> proto_sum<span class="sc">$</span>proto</span>
+<span id="cb49-4"><a href="#cb49-4" aria-hidden="true" tabindex="-1"></a>myColorPal2 <span class="ot">&lt;-</span> <span class="fu">brewer.pal</span>(<span class="dv">5</span>, <span class="st">"Set3"</span>)</span>
+<span id="cb49-5"><a href="#cb49-5" aria-hidden="true" tabindex="-1"></a><span class="fu">pie</span>(frequency_of_proto, <span class="at">labels =</span> <span class="fu">paste</span>(proto_lbls, <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>, <span class="fu">percent</span>(frequency_of_proto <span class="sc">/</span> <span class="fu">sum</span>(frequency_of_proto))), <span class="at">col =</span> myColorPal2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="KeshavRDiary_files/figure-html/unnamed-chunk-6-5.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section id="date-6th-march-2024" class="level1">
+<h1>Date:-6th March 2024</h1>
+</section>
+<section id="time-520-pm" class="level1">
+<h1>Time:-5:20 PM</h1>
+<section id="learning-how-to-add-images-to-quarto-document" class="level2">
+<h2 class="anchored" data-anchor-id="learning-how-to-add-images-to-quarto-document">Learning how to add images to quarto document</h2>
+<p>I wanted to learn how to add images easily in Markdown and I found the below website really helpful. All I needed to remember was to put the image file in my working directory If I am trying to avoid writing the full path of the file.</p>
+<p>https://quarto.org/docs/authoring/figures.html</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="addingimages.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Adding Images for the first time</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="date-7th-march-2024" class="level1">
+<h1>Date:-7th March 2024</h1>
+</section>
+<section id="time-230-pm" class="level1">
+<h1>Time:-2:30 PM</h1>
+<section id="made-a-new-repository-in-github-for-assignment-3" class="level2">
+<h2 class="anchored" data-anchor-id="made-a-new-repository-in-github-for-assignment-3">Made a new repository in github for assignment 3</h2>
+<p>For today it is just a sample text file commit. Later throughout assignment 3 I will be pushing whatever code I will be writing.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="gitcode.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Github First Ever Commit</figcaption>
+</figure>
+</div>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
