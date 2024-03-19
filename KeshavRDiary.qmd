@@ -8,7 +8,9 @@ title-block-categories: true
 ---
 
 # Date:-2nd February 2024
+
 # Time:-11:23 PM
+
 ## Trying out some R code from the lab videos
 
 Since R is a scripting language and I have pretty much gotten used to compiled languages it was a little difficult getting used to running separate lines of code and directing it to the console to get the output.
@@ -23,15 +25,15 @@ z <- z + 11
 z
 ```
 
-
 # Date:-3rd February 2024
+
 # Time:-10:04 PM
+
 ## Attempting to code a calculator in R
 
 ### I tried making a simple calculator using R but failed miserably. I borrowed some code from <https://www.geeksforgeeks.org/taking-input-from-user-in-r-programming/>
 
 I got a warning message when I tried to convert my input from string to a number
-
 
 ```{r}
 #taking the below code from this URL https://www.geeksforgeeks.org/taking-input-from-user-in-r-programming/
@@ -56,7 +58,9 @@ if(method_calc=="add"){y <- a+b}
 ##### unfortunately my attempt to build a calculator has to be postponed as i might have to learn the use of functions and if else statements before attempting that. I will try it very soon.
 
 # Date:-8th February 2024
+
 # Time:-9:31 AM
+
 ## Attempting to install libraries inside Quarto in order to run the Assignment code
 
 ```{r}
@@ -80,14 +84,16 @@ The libraries which are included here help in data visualization like creating b
 Now we will see how to utilize these libraries for my data set and come up with some beautiful pie charts and bar graphs. A few of these libraries are used for plotting an the library called "RColorBrewer" is used for creating nice color palettes which then can be used for your graphs. I like this feature.
 
 # Date:-20th February 2024
+
 # Time:-6:44 PM
+
 ## Attempting to install libraries inside Quarto in order to run the Assignment code
 
 ##### Initially I was getting an error when trying to use the install function. I asked copilot for the reason of this error
 
 #### Missing Repository Configuration:
 
-When you run install.packages("tidyverse"), R needs to know where to find the package. By default, it tries to connect to CRAN, but you need to specify a mirror. To fix this, explicitly set the CRAN mirror by using the repos argument in the install.packages() function. For example: install.packages("tidyverse", repos = "[http://cran.us.r-project.org")](http://cran.us.r-project.org"))
+When you run install.packages("tidyverse"), R needs to know where to find the package. By default, it tries to connect to CRAN, but you need to specify a mirror. To fix this, explicitly set the CRAN mirror by using the repos argument in the install.packages() function. For example: install.packages("tidyverse", repos = "[http://cran.us.r-project.org")](http://cran.us.r-project.org%22))
 
 ##### So to sort this issue I replaced the original install function with the example given above and now the functions seem to be working.
 
@@ -107,10 +113,10 @@ install.packages("tidyverse", repos = "http://cran.us.r-project.org")
 install.packages("ggplot2", repos = "http://cran.us.r-project.org")
 ```
 
-
-
 # Date:-21st February 2024
+
 # Time:-5:00 PM
+
 ## Today I am running my code for the assignment 1 dataset.
 
 This includes multiple bar plots and pie charts showcasing different aspects of the dataset.
@@ -178,14 +184,17 @@ myColorPal <- brewer.pal(5, "Set3")
 
 pie(namec,labels = paste(lbls, "\n", percent(namec / sum(namec))),col=myColorPal)
 ```
+
 # Date:-25th February
-#Time:-10:33 PM
-## Attempting the work on my second dataset which I used in my assignment 1.
+
+#Time:-10:33 PM \## Attempting the work on my second dataset which I used in my assignment 1.
 
 ###Dataset:- https://datadrivensecurity.info/blog/pages/dds-dataset-collection.html
 
 #### Lets talk about this dataset a little bit. The data which is shown here is taken from several honeypot servers residing in different geographical regions. Honeypot servers are usually operated by companies entice hackers and threat actors to attack their server.Keeping in mind that the threat actor might think that the server is vulnerable but in reality it is just a way to threat actors and analyze their approach to prevent a real cyber attack.
+
 #### Hence honeypot servers are incredibly useful for cyber industry and cyber defense in general. One thing honeypot servers do is that they generate a lot of data.Only because there are so many data transmissions happening. This data definitely could give us valuable insights.
+
 ##### The data is depicted in a nice uniform format. The ip addresses are converted to long format to make it easier to read and operate. Other columns include source and destination server region names. Let see what how we can create a few visualizations using this data set.
 
 ```{r}
@@ -265,8 +274,11 @@ pie(frequency_of_proto, labels = paste(proto_lbls, "\n", percent(frequency_of_pr
 
 
 ```
+
 # Date:-6th March 2024
+
 # Time:-5:20 PM
+
 ## Learning how to add images to quarto document
 
 I wanted to learn how to add images easily in Markdown and I found the below website really helpful. All I needed to remember was to put the image file in my working directory If I am trying to avoid writing the full path of the file.
@@ -274,8 +286,6 @@ I wanted to learn how to add images easily in Markdown and I found the below web
 https://quarto.org/docs/authoring/figures.html
 
 ![Adding Images for the first time](addingimages.png)
-
-
 
 # Date:-7th March 2024
 
@@ -286,6 +296,69 @@ https://quarto.org/docs/authoring/figures.html
 For today it is just a sample text file commit. Later throughout assignment 3 I will be pushing whatever code I will be writing.
 
 ![Github First Ever Commit](gitcode.png)
+
+# Date:-8th March 2024
+
+# Time:-11:20 PM
+
+## Started working on Assignment 3. First step is to enhance the honeypot dataset I used in assignment 1.
+
+
+```{r}
+#Perfming more analysis on the honeypot dataset
+
+
+honeypotdataset <- read.csv("marx.csv")
+
+
+
+summary(honeypotdataset)
+
+#taken this code from the original dataset website's blog post. You can check it out here.
+#https://datadrivensecurity.info/blog/posts/2014/Jan/blander-part1/ 
+
+#first we change the format of the date type column.
+#why we are doing this is basically to find the frequency of transmission on a particular host
+
+honeypotdataset$day <- as.Date(honeypotdataset$datetime, format = "%Y-%m-%d %H:%M:%S")
+
+#here we are just adding a new frequency column
+
+honeypotdataset$freq <- c(1)
+
+#here we are adding the number of host for a particular day and showing it as frequency.
+#more about aggregate functions and tilde symbol on below links
+
+#https://medium.com/anu-perumalsamy/what-does-mean-in-r-18cecd1b223f#:~:text='~(tilde)'%20is%20an%20operator%20that%20splits%20the%20left,the%20set%20of%20feature%20variables.
+#https://www.geeksforgeeks.org/how-to-use-aggregate-function-in-r/
+
+hosts <- aggregate(freq ~ day + host, data = honeypotdataset, FUN = sum)
+#checking how the dataframe looks like by calling the first few columns
+head(hosts)
+
+
+```
+# Date:-14th March 2024
+
+# Time:-9:45 AM
+
+## Making a separate repository for my assignment 1 and commiting my new code to the assignment 2 repository
+
+
+![GitBash Error](giterror.png)
+
+# Date:-15th March 2024
+
+# Time:-6:45 AM
+
+## Finally fixed my github repository error. The reason for the error was repositories not being up to date with my local so i had to do a pull first before pushing
+
+![New Assignment1 Repository](assign1git.png)
+# Date:-15th March 2024
+
+# Time:-6:45 AM
+
+## Today I am attempting to delve deeper into my second dataset for Assignment 2
 
 
 

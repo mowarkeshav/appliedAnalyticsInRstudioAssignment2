@@ -221,11 +221,14 @@ Attaching package: 'dplyr'</code></pre>
 
     intersect, setdiff, setequal, union</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
-<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyr)</span>
-<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(RColorBrewer)</span>
-<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a><span class="co">#commenting these out as they are causing error ---install.packages("tidyverse")</span></span>
-<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a><span class="co">#commenting these out as they are causing error ---install.packages("ggplot2")</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'ggplot2' was built under R version 4.3.3</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyr)</span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(RColorBrewer)</span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a><span class="co">#commenting these out as they are causing error ---install.packages("tidyverse")</span></span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a><span class="co">#commenting these out as they are causing error ---install.packages("ggplot2")</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>The libraries which are included here help in data visualization like creating bar plots, scatter plots and bar graphs etc.</p>
 <p>Now we will see how to utilize these libraries for my data set and come up with some beautiful pie charts and bar graphs. A few of these libraries are used for plotting an the library called “RColorBrewer” is used for creating nice color palettes which then can be used for your graphs. I like this feature.</p>
@@ -247,25 +250,25 @@ Attaching package: 'dplyr'</code></pre>
 <section id="so-to-sort-this-issue-i-replaced-the-original-install-function-with-the-example-given-above-and-now-the-functions-seem-to-be-working." class="level5">
 <h5 class="anchored" data-anchor-id="so-to-sort-this-issue-i-replaced-the-original-install-function-with-the-example-given-above-and-now-the-functions-seem-to-be-working.">So to sort this issue I replaced the original install function with the example given above and now the functions seem to be working.</h5>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co">#installing the required packages. these are the packages I used in assignment 1 as well</span></span>
-<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: load-packages</span></span>
-<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a><span class="co">#| warning: true</span></span>
-<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
-<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readr)</span>
-<span id="cb22-7"><a href="#cb22-7" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(scales)</span>
-<span id="cb22-8"><a href="#cb22-8" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
-<span id="cb22-9"><a href="#cb22-9" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
-<span id="cb22-10"><a href="#cb22-10" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyr)</span>
-<span id="cb22-11"><a href="#cb22-11" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(RColorBrewer)</span>
-<span id="cb22-12"><a href="#cb22-12" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"tidyverse"</span>, <span class="at">repos =</span> <span class="st">"http://cran.us.r-project.org"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="co">#installing the required packages. these are the packages I used in assignment 1 as well</span></span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: load-packages</span></span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a><span class="co">#| warning: true</span></span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
+<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readr)</span>
+<span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(scales)</span>
+<span id="cb24-8"><a href="#cb24-8" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb24-9"><a href="#cb24-9" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb24-10"><a href="#cb24-10" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyr)</span>
+<span id="cb24-11"><a href="#cb24-11" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(RColorBrewer)</span>
+<span id="cb24-12"><a href="#cb24-12" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"tidyverse"</span>, <span class="at">repos =</span> <span class="st">"http://cran.us.r-project.org"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>package 'tidyverse' successfully unpacked and MD5 sums checked
 
 The downloaded binary packages are in
-    C:\Users\Keshav\AppData\Local\Temp\RtmpYrl8Cr\downloaded_packages</code></pre>
+    C:\Users\Keshav\AppData\Local\Temp\RtmpYzz36R\downloaded_packages</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"ggplot2"</span>, <span class="at">repos =</span> <span class="st">"http://cran.us.r-project.org"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"ggplot2"</span>, <span class="at">repos =</span> <span class="st">"http://cran.us.r-project.org"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Warning: package 'ggplot2' is in use and will not be installed</code></pre>
 </div>
@@ -285,13 +288,13 @@ The downloaded binary packages are in
 <section id="now-lets-try-to-read-the-a-dataset-from-a-tsv-file.-these-kinds-of-files-have-table-separated-values.-this-particular-dataset-is-purely-categorical-data-and-it-has-divided-website-urls-into-different-categories-like-primary-category-and-secondary-category." class="level4">
 <h4 class="anchored" data-anchor-id="now-lets-try-to-read-the-a-dataset-from-a-tsv-file.-these-kinds-of-files-have-table-separated-values.-this-particular-dataset-is-purely-categorical-data-and-it-has-divided-website-urls-into-different-categories-like-primary-category-and-secondary-category.">Now lets try to read the a dataset from a tsv file. These kinds of files have table separated values. This particular dataset is purely categorical data and it has divided website URLS into different categories like Primary Category and Secondary Category.</h4>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">50</span>)</span>
-<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a><span class="co"># source for the below code https://readr.tidyverse.org/reference/read_delim.html</span></span>
-<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a><span class="co">#I noticed that the readtsv function has an option called "lazy" which helps reducing some extra configuration from the developer</span></span>
-<span id="cb26-6"><a href="#cb26-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb26-7"><a href="#cb26-7" aria-hidden="true" tabindex="-1"></a>cybersecdata1 <span class="ot">&lt;-</span> readr<span class="sc">::</span><span class="fu">read_tsv</span>(<span class="st">'classification.tsv'</span>, <span class="at">col_names =</span> <span class="cn">TRUE</span>,<span class="at">lazy=</span><span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">50</span>)</span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a><span class="co"># source for the below code https://readr.tidyverse.org/reference/read_delim.html</span></span>
+<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a><span class="co">#I noticed that the readtsv function has an option called "lazy" which helps reducing some extra configuration from the developer</span></span>
+<span id="cb28-6"><a href="#cb28-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-7"><a href="#cb28-7" aria-hidden="true" tabindex="-1"></a>cybersecdata1 <span class="ot">&lt;-</span> readr<span class="sc">::</span><span class="fu">read_tsv</span>(<span class="st">'classification.tsv'</span>, <span class="at">col_names =</span> <span class="cn">TRUE</span>,<span class="at">lazy=</span><span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Rows: 26909 Columns: 4
 ── Column specification ────────────────────────────────────────────────────────
@@ -301,22 +304,22 @@ chr (4): Primary Category, Secondary Category, Title, URL
 ℹ Use `spec()` to retrieve the full column specification for this data.
 ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="co"># I am trying out sampling on this dataset just to see how the values are selected. I am taking only 500 records for this dataset</span></span>
-<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a><span class="co"># source for the below code https://www.digitalocean.com/community/tutorials/sample-in-r</span></span>
-<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a>cybersecdata1_sampled <span class="ot">&lt;-</span> <span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="fu">nrow</span>(cybersecdata1), <span class="dv">500</span>)</span>
-<span id="cb28-6"><a href="#cb28-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-7"><a href="#cb28-7" aria-hidden="true" tabindex="-1"></a><span class="co">#after the code is sampled</span></span>
-<span id="cb28-8"><a href="#cb28-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-9"><a href="#cb28-9" aria-hidden="true" tabindex="-1"></a>cybersecdata1_final <span class="ot">&lt;-</span> cybersecdata1[cybersecdata1_sampled,]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="co"># I am trying out sampling on this dataset just to see how the values are selected. I am taking only 500 records for this dataset</span></span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a><span class="co"># source for the below code https://www.digitalocean.com/community/tutorials/sample-in-r</span></span>
+<span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-5"><a href="#cb30-5" aria-hidden="true" tabindex="-1"></a>cybersecdata1_sampled <span class="ot">&lt;-</span> <span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="fu">nrow</span>(cybersecdata1), <span class="dv">500</span>)</span>
+<span id="cb30-6"><a href="#cb30-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-7"><a href="#cb30-7" aria-hidden="true" tabindex="-1"></a><span class="co">#after the code is sampled</span></span>
+<span id="cb30-8"><a href="#cb30-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-9"><a href="#cb30-9" aria-hidden="true" tabindex="-1"></a>cybersecdata1_final <span class="ot">&lt;-</span> cybersecdata1[cybersecdata1_sampled,]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Warning: One or more parsing issues, call `problems()` on your data frame for details,
 e.g.:
   dat &lt;- vroom(...)
   problems(dat)</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>cybersecdata1_final</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>cybersecdata1_final</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 500 × 4
    `Primary Category`           `Secondary Category`               Title   URL  
@@ -333,45 +336,45 @@ e.g.:
 10 Society &amp; Culture            Sports and Recreation              Wenloc… http…
 # ℹ 490 more rows</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Next I group the dataset by the Primary Category column name as it will give an interesting insight. Primary Categories basically show which kind of industries or domains a website belongs to </span></span>
-<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a><span class="co"># source for the below code https://www.linkedin.com/pulse/usage-groupby-dplyr-r-tuhin-tapadar/</span></span>
-<span id="cb32-4"><a href="#cb32-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb32-5"><a href="#cb32-5" aria-hidden="true" tabindex="-1"></a>group_cybersecdata1 <span class="ot">&lt;-</span> cybersecdata1_final <span class="sc">%&gt;%</span> <span class="fu">group_by</span>(<span class="st">`</span><span class="at">Primary Category</span><span class="st">`</span>)</span>
-<span id="cb32-6"><a href="#cb32-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb32-7"><a href="#cb32-7" aria-hidden="true" tabindex="-1"></a><span class="co">#After grouping , I also count the number of times a particular category comes up by using the name_count variable. I also summarize the whole output to get a brief detail on how the tibble looks</span></span>
-<span id="cb32-8"><a href="#cb32-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb32-9"><a href="#cb32-9" aria-hidden="true" tabindex="-1"></a>group_cybersecdata1_sum <span class="ot">&lt;-</span> <span class="fu">summarise</span>(group_cybersecdata1, <span class="at">name_count =</span> <span class="fu">n</span>())</span>
-<span id="cb32-10"><a href="#cb32-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb32-11"><a href="#cb32-11" aria-hidden="true" tabindex="-1"></a><span class="co">#I used below code to order the tibble in decreasing order so that we can see which category had the most websites. The reason for doing this is to understand the adaptation of web technology by different kinds of industries.</span></span>
-<span id="cb32-12"><a href="#cb32-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb32-13"><a href="#cb32-13" aria-hidden="true" tabindex="-1"></a><span class="co">#https://bookdown.org/ndphillips/YaRrr/order-sorting-data.html</span></span>
-<span id="cb32-14"><a href="#cb32-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb32-15"><a href="#cb32-15" aria-hidden="true" tabindex="-1"></a>group_cybersecdata1_ordered <span class="ot">&lt;-</span> group_cybersecdata1_sum[<span class="fu">order</span>(group_cybersecdata1_sum<span class="sc">$</span>name_count, <span class="at">decreasing =</span> <span class="cn">TRUE</span>),]</span>
-<span id="cb32-16"><a href="#cb32-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb32-17"><a href="#cb32-17" aria-hidden="true" tabindex="-1"></a><span class="co">#After ordering I decide to take the top 7 categories which come up. The reason for doing this is because they are the most populated categories and it makes it easier to a statistic visualization of the data.</span></span>
-<span id="cb32-18"><a href="#cb32-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb32-19"><a href="#cb32-19" aria-hidden="true" tabindex="-1"></a>groupcybersecdata1_ordered_sample_final <span class="ot">&lt;-</span> <span class="fu">head</span>(group_cybersecdata1_ordered,<span class="dv">7</span>)</span>
-<span id="cb32-20"><a href="#cb32-20" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb32-21"><a href="#cb32-21" aria-hidden="true" tabindex="-1"></a>gd2 <span class="ot">&lt;-</span> groupcybersecdata1_ordered_sample_final</span>
-<span id="cb32-22"><a href="#cb32-22" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb32-23"><a href="#cb32-23" aria-hidden="true" tabindex="-1"></a><span class="co">#Once the final datagram is ready which is "gd2". I took a decision to draw a pie chart for this dataset. I very well know that pie charts are not really a good way to show data visualization but since this is a non numerical dataset and I am new to R, this is the simplest way I could find to show the dataset.</span></span>
-<span id="cb32-24"><a href="#cb32-24" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb32-25"><a href="#cb32-25" aria-hidden="true" tabindex="-1"></a><span class="co">#To make a simple pie chart , we have to initialize a few variables. One of them will be the content of the pie chart(could be numbers or percentage etc) and the other will be the label of the section.</span></span>
-<span id="cb32-26"><a href="#cb32-26" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb32-27"><a href="#cb32-27" aria-hidden="true" tabindex="-1"></a><span class="co">#name of the primary category</span></span>
-<span id="cb32-28"><a href="#cb32-28" aria-hidden="true" tabindex="-1"></a>namec <span class="ot">&lt;-</span> gd2<span class="sc">$</span>name_count</span>
-<span id="cb32-29"><a href="#cb32-29" aria-hidden="true" tabindex="-1"></a><span class="co">#number of websites comprising this primary category in percentage</span></span>
-<span id="cb32-30"><a href="#cb32-30" aria-hidden="true" tabindex="-1"></a>lbls <span class="ot">&lt;-</span> gd2<span class="sc">$</span><span class="st">`</span><span class="at">Primary Category</span><span class="st">`</span></span>
-<span id="cb32-31"><a href="#cb32-31" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb32-32"><a href="#cb32-32" aria-hidden="true" tabindex="-1"></a><span class="co">#setting the color pallette. </span></span>
-<span id="cb32-33"><a href="#cb32-33" aria-hidden="true" tabindex="-1"></a>myColorPal <span class="ot">&lt;-</span> <span class="fu">brewer.pal</span>(<span class="dv">5</span>, <span class="st">"Set3"</span>) </span>
-<span id="cb32-34"><a href="#cb32-34" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb32-35"><a href="#cb32-35" aria-hidden="true" tabindex="-1"></a><span class="co">#bar graph source code below</span></span>
-<span id="cb32-36"><a href="#cb32-36" aria-hidden="true" tabindex="-1"></a><span class="co">#https://r-graph-gallery.com/131-pie-plot-with-r.html</span></span>
-<span id="cb32-37"><a href="#cb32-37" aria-hidden="true" tabindex="-1"></a><span class="co">#Finaly executing the pie chart</span></span>
-<span id="cb32-38"><a href="#cb32-38" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb32-39"><a href="#cb32-39" aria-hidden="true" tabindex="-1"></a><span class="fu">pie</span>(namec,<span class="at">labels =</span> <span class="fu">paste</span>(lbls, <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>, <span class="fu">percent</span>(namec <span class="sc">/</span> <span class="fu">sum</span>(namec))),<span class="at">col=</span>myColorPal)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Next I group the dataset by the Primary Category column name as it will give an interesting insight. Primary Categories basically show which kind of industries or domains a website belongs to </span></span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a><span class="co"># source for the below code https://www.linkedin.com/pulse/usage-groupby-dplyr-r-tuhin-tapadar/</span></span>
+<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-5"><a href="#cb34-5" aria-hidden="true" tabindex="-1"></a>group_cybersecdata1 <span class="ot">&lt;-</span> cybersecdata1_final <span class="sc">%&gt;%</span> <span class="fu">group_by</span>(<span class="st">`</span><span class="at">Primary Category</span><span class="st">`</span>)</span>
+<span id="cb34-6"><a href="#cb34-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-7"><a href="#cb34-7" aria-hidden="true" tabindex="-1"></a><span class="co">#After grouping , I also count the number of times a particular category comes up by using the name_count variable. I also summarize the whole output to get a brief detail on how the tibble looks</span></span>
+<span id="cb34-8"><a href="#cb34-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-9"><a href="#cb34-9" aria-hidden="true" tabindex="-1"></a>group_cybersecdata1_sum <span class="ot">&lt;-</span> <span class="fu">summarise</span>(group_cybersecdata1, <span class="at">name_count =</span> <span class="fu">n</span>())</span>
+<span id="cb34-10"><a href="#cb34-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-11"><a href="#cb34-11" aria-hidden="true" tabindex="-1"></a><span class="co">#I used below code to order the tibble in decreasing order so that we can see which category had the most websites. The reason for doing this is to understand the adaptation of web technology by different kinds of industries.</span></span>
+<span id="cb34-12"><a href="#cb34-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-13"><a href="#cb34-13" aria-hidden="true" tabindex="-1"></a><span class="co">#https://bookdown.org/ndphillips/YaRrr/order-sorting-data.html</span></span>
+<span id="cb34-14"><a href="#cb34-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-15"><a href="#cb34-15" aria-hidden="true" tabindex="-1"></a>group_cybersecdata1_ordered <span class="ot">&lt;-</span> group_cybersecdata1_sum[<span class="fu">order</span>(group_cybersecdata1_sum<span class="sc">$</span>name_count, <span class="at">decreasing =</span> <span class="cn">TRUE</span>),]</span>
+<span id="cb34-16"><a href="#cb34-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-17"><a href="#cb34-17" aria-hidden="true" tabindex="-1"></a><span class="co">#After ordering I decide to take the top 7 categories which come up. The reason for doing this is because they are the most populated categories and it makes it easier to a statistic visualization of the data.</span></span>
+<span id="cb34-18"><a href="#cb34-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-19"><a href="#cb34-19" aria-hidden="true" tabindex="-1"></a>groupcybersecdata1_ordered_sample_final <span class="ot">&lt;-</span> <span class="fu">head</span>(group_cybersecdata1_ordered,<span class="dv">7</span>)</span>
+<span id="cb34-20"><a href="#cb34-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-21"><a href="#cb34-21" aria-hidden="true" tabindex="-1"></a>gd2 <span class="ot">&lt;-</span> groupcybersecdata1_ordered_sample_final</span>
+<span id="cb34-22"><a href="#cb34-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-23"><a href="#cb34-23" aria-hidden="true" tabindex="-1"></a><span class="co">#Once the final datagram is ready which is "gd2". I took a decision to draw a pie chart for this dataset. I very well know that pie charts are not really a good way to show data visualization but since this is a non numerical dataset and I am new to R, this is the simplest way I could find to show the dataset.</span></span>
+<span id="cb34-24"><a href="#cb34-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-25"><a href="#cb34-25" aria-hidden="true" tabindex="-1"></a><span class="co">#To make a simple pie chart , we have to initialize a few variables. One of them will be the content of the pie chart(could be numbers or percentage etc) and the other will be the label of the section.</span></span>
+<span id="cb34-26"><a href="#cb34-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-27"><a href="#cb34-27" aria-hidden="true" tabindex="-1"></a><span class="co">#name of the primary category</span></span>
+<span id="cb34-28"><a href="#cb34-28" aria-hidden="true" tabindex="-1"></a>namec <span class="ot">&lt;-</span> gd2<span class="sc">$</span>name_count</span>
+<span id="cb34-29"><a href="#cb34-29" aria-hidden="true" tabindex="-1"></a><span class="co">#number of websites comprising this primary category in percentage</span></span>
+<span id="cb34-30"><a href="#cb34-30" aria-hidden="true" tabindex="-1"></a>lbls <span class="ot">&lt;-</span> gd2<span class="sc">$</span><span class="st">`</span><span class="at">Primary Category</span><span class="st">`</span></span>
+<span id="cb34-31"><a href="#cb34-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-32"><a href="#cb34-32" aria-hidden="true" tabindex="-1"></a><span class="co">#setting the color pallette. </span></span>
+<span id="cb34-33"><a href="#cb34-33" aria-hidden="true" tabindex="-1"></a>myColorPal <span class="ot">&lt;-</span> <span class="fu">brewer.pal</span>(<span class="dv">5</span>, <span class="st">"Set3"</span>) </span>
+<span id="cb34-34"><a href="#cb34-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-35"><a href="#cb34-35" aria-hidden="true" tabindex="-1"></a><span class="co">#bar graph source code below</span></span>
+<span id="cb34-36"><a href="#cb34-36" aria-hidden="true" tabindex="-1"></a><span class="co">#https://r-graph-gallery.com/131-pie-plot-with-r.html</span></span>
+<span id="cb34-37"><a href="#cb34-37" aria-hidden="true" tabindex="-1"></a><span class="co">#Finaly executing the pie chart</span></span>
+<span id="cb34-38"><a href="#cb34-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-39"><a href="#cb34-39" aria-hidden="true" tabindex="-1"></a><span class="fu">pie</span>(namec,<span class="at">labels =</span> <span class="fu">paste</span>(lbls, <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>, <span class="fu">percent</span>(namec <span class="sc">/</span> <span class="fu">sum</span>(namec))),<span class="at">col=</span>myColorPal)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <p><img src="KeshavRDiary_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid" width="672"></p>
 </div>
@@ -391,17 +394,17 @@ e.g.:
 <section id="the-data-is-depicted-in-a-nice-uniform-format.-the-ip-addresses-are-converted-to-long-format-to-make-it-easier-to-read-and-operate.-other-columns-include-source-and-destination-server-region-names.-let-see-what-how-we-can-create-a-few-visualizations-using-this-data-set." class="level5">
 <h5 class="anchored" data-anchor-id="the-data-is-depicted-in-a-nice-uniform-format.-the-ip-addresses-are-converted-to-long-format-to-make-it-easier-to-read-and-operate.-other-columns-include-source-and-destination-server-region-names.-let-see-what-how-we-can-create-a-few-visualizations-using-this-data-set.">The data is depicted in a nice uniform format. The ip addresses are converted to long format to make it easier to read and operate. Other columns include source and destination server region names. Let see what how we can create a few visualizations using this data set.</h5>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="co">#I have taken this dataset to showcase some of the data transmission which happens on honeypot servers and get some insights </span></span>
-<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a><span class="co">#the second dataset is taken from https://datadrivensecurity.info/blog/pages/dds-dataset-collection.html</span></span>
-<span id="cb33-4"><a href="#cb33-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb33-5"><a href="#cb33-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb33-6"><a href="#cb33-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb33-7"><a href="#cb33-7" aria-hidden="true" tabindex="-1"></a><span class="co">#reading csv</span></span>
-<span id="cb33-8"><a href="#cb33-8" aria-hidden="true" tabindex="-1"></a>cybersecdata2 <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"marx.csv"</span>)</span>
-<span id="cb33-9"><a href="#cb33-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb33-10"><a href="#cb33-10" aria-hidden="true" tabindex="-1"></a><span class="co">#summary and head command just to get a sense of data</span></span>
-<span id="cb33-11"><a href="#cb33-11" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(cybersecdata2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="co">#I have taken this dataset to showcase some of the data transmission which happens on honeypot servers and get some insights </span></span>
+<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a><span class="co">#the second dataset is taken from https://datadrivensecurity.info/blog/pages/dds-dataset-collection.html</span></span>
+<span id="cb35-4"><a href="#cb35-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-5"><a href="#cb35-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-6"><a href="#cb35-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-7"><a href="#cb35-7" aria-hidden="true" tabindex="-1"></a><span class="co">#reading csv</span></span>
+<span id="cb35-8"><a href="#cb35-8" aria-hidden="true" tabindex="-1"></a>cybersecdata2 <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"marx.csv"</span>)</span>
+<span id="cb35-9"><a href="#cb35-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-10"><a href="#cb35-10" aria-hidden="true" tabindex="-1"></a><span class="co">#summary and head command just to get a sense of data</span></span>
+<span id="cb35-11"><a href="#cb35-11" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(cybersecdata2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>   datetime             host                src               proto          
  Length:451581      Length:451581      Min.   :1.678e+07   Length:451581     
@@ -420,7 +423,7 @@ e.g.:
  Max.   :13.0     Max.   :65535   Max.   :65500  
  NA's   :406770   NA's   :44811   NA's   :44811  </code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(cybersecdata2,<span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(cybersecdata2,<span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>              datetime              host        src proto type   spt  dpt
 1  2013-03-03 21:53:59    groucho-oregon 1032051418   TCP   NA  6000 1433
@@ -434,13 +437,13 @@ e.g.:
 9  2013-03-03 22:12:02    groucho-oregon 3683919430   TCP   NA  6000 1433
 10 2013-03-03 22:14:19 groucho-singapore 1007884304   TCP   NA  6000 1433</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="co">#The date format is a bit weird so I decided to make it simpler.</span></span>
-<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a>cybersecdata2<span class="sc">$</span>datetime<span class="ot">&lt;-</span> <span class="fu">as.Date</span>(cybersecdata2<span class="sc">$</span>datetime, <span class="at">format =</span> <span class="st">"%Y-%m-%d"</span>)</span>
-<span id="cb37-4"><a href="#cb37-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-5"><a href="#cb37-5" aria-hidden="true" tabindex="-1"></a><span class="co">#dataset after changing date format</span></span>
-<span id="cb37-6"><a href="#cb37-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb37-7"><a href="#cb37-7" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(cybersecdata2,<span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="co">#The date format is a bit weird so I decided to make it simpler.</span></span>
+<span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb39-3"><a href="#cb39-3" aria-hidden="true" tabindex="-1"></a>cybersecdata2<span class="sc">$</span>datetime<span class="ot">&lt;-</span> <span class="fu">as.Date</span>(cybersecdata2<span class="sc">$</span>datetime, <span class="at">format =</span> <span class="st">"%Y-%m-%d"</span>)</span>
+<span id="cb39-4"><a href="#cb39-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb39-5"><a href="#cb39-5" aria-hidden="true" tabindex="-1"></a><span class="co">#dataset after changing date format</span></span>
+<span id="cb39-6"><a href="#cb39-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb39-7"><a href="#cb39-7" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(cybersecdata2,<span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>     datetime              host        src proto type   spt  dpt
 1  2013-03-03    groucho-oregon 1032051418   TCP   NA  6000 1433
@@ -454,10 +457,10 @@ e.g.:
 9  2013-03-03    groucho-oregon 3683919430   TCP   NA  6000 1433
 10 2013-03-03 groucho-singapore 1007884304   TCP   NA  6000 1433</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="co">#lets sample the data to get fewer records</span></span>
-<span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a>cybersecdata2_sampled<span class="ot">&lt;-</span> <span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="fu">nrow</span>(cybersecdata2), <span class="dv">5000</span>)</span>
-<span id="cb39-3"><a href="#cb39-3" aria-hidden="true" tabindex="-1"></a>cybersecdata2_final <span class="ot">&lt;-</span> cybersecdata2[cybersecdata2_sampled,]</span>
-<span id="cb39-4"><a href="#cb39-4" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(cybersecdata2_final,<span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="co">#lets sample the data to get fewer records</span></span>
+<span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a>cybersecdata2_sampled<span class="ot">&lt;-</span> <span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="fu">nrow</span>(cybersecdata2), <span class="dv">5000</span>)</span>
+<span id="cb41-3"><a href="#cb41-3" aria-hidden="true" tabindex="-1"></a>cybersecdata2_final <span class="ot">&lt;-</span> cybersecdata2[cybersecdata2_sampled,]</span>
+<span id="cb41-4"><a href="#cb41-4" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(cybersecdata2_final,<span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>         datetime              host        src proto type   spt   dpt
 197913 2013-06-05     groucho-tokyo 3223748177   TCP   NA  1967   445
@@ -471,18 +474,18 @@ e.g.:
 336694 2013-07-30 groucho-singapore 1313866355   TCP   NA  3901    23
 272999 2013-07-09 groucho-singapore 3417478163  ICMP    8    NA    NA</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="co">#grouping the hosts by region and taking their counts.for this analysis I decided to group servers by their region. this will tell us how many data transmissions happened in which region.</span></span>
-<span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb41-3"><a href="#cb41-3" aria-hidden="true" tabindex="-1"></a>hosts_groupby <span class="ot">&lt;-</span> cybersecdata2_final <span class="sc">%&gt;%</span> <span class="fu">group_by</span>(host)</span>
-<span id="cb41-4"><a href="#cb41-4" aria-hidden="true" tabindex="-1"></a>hosts_sum <span class="ot">&lt;-</span> <span class="fu">summarise</span>(hosts_groupby, <span class="at">name_count =</span> <span class="fu">n</span>())</span>
-<span id="cb41-5"><a href="#cb41-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb41-6"><a href="#cb41-6" aria-hidden="true" tabindex="-1"></a><span class="co">#plotting a bar plot for showcasing server location and the number of servers in each location</span></span>
-<span id="cb41-7"><a href="#cb41-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb41-8"><a href="#cb41-8" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(hosts_sum, <span class="fu">aes</span>(<span class="at">x =</span> hosts_sum<span class="sc">$</span>host, <span class="at">y =</span> hosts_sum<span class="sc">$</span>name_count)) <span class="sc">+</span></span>
-<span id="cb41-9"><a href="#cb41-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">stat =</span> <span class="st">"identity"</span>, <span class="at">fill =</span> <span class="st">"purple"</span>) <span class="sc">+</span>  <span class="co"># Bar plot with identity statistic</span></span>
-<span id="cb41-10"><a href="#cb41-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Geographical region of Host servers"</span>, <span class="at">y =</span> <span class="st">"Number of Hosts"</span>) <span class="sc">+</span>  <span class="co"># Labels for axes</span></span>
-<span id="cb41-11"><a href="#cb41-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggtitle</span>(<span class="st">"Bar Plot of regional Honeypot hosts vs. Number of hosts in particular region"</span>) <span class="sc">+</span>  <span class="co"># Title for the plot</span></span>
-<span id="cb41-12"><a href="#cb41-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb43"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a><span class="co">#grouping the hosts by region and taking their counts.for this analysis I decided to group servers by their region. this will tell us how many data transmissions happened in which region.</span></span>
+<span id="cb43-2"><a href="#cb43-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-3"><a href="#cb43-3" aria-hidden="true" tabindex="-1"></a>hosts_groupby <span class="ot">&lt;-</span> cybersecdata2_final <span class="sc">%&gt;%</span> <span class="fu">group_by</span>(host)</span>
+<span id="cb43-4"><a href="#cb43-4" aria-hidden="true" tabindex="-1"></a>hosts_sum <span class="ot">&lt;-</span> <span class="fu">summarise</span>(hosts_groupby, <span class="at">name_count =</span> <span class="fu">n</span>())</span>
+<span id="cb43-5"><a href="#cb43-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-6"><a href="#cb43-6" aria-hidden="true" tabindex="-1"></a><span class="co">#plotting a bar plot for showcasing server location and the number of servers in each location</span></span>
+<span id="cb43-7"><a href="#cb43-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-8"><a href="#cb43-8" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(hosts_sum, <span class="fu">aes</span>(<span class="at">x =</span> hosts_sum<span class="sc">$</span>host, <span class="at">y =</span> hosts_sum<span class="sc">$</span>name_count)) <span class="sc">+</span></span>
+<span id="cb43-9"><a href="#cb43-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">stat =</span> <span class="st">"identity"</span>, <span class="at">fill =</span> <span class="st">"purple"</span>) <span class="sc">+</span>  <span class="co"># Bar plot with identity statistic</span></span>
+<span id="cb43-10"><a href="#cb43-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Geographical region of Host servers"</span>, <span class="at">y =</span> <span class="st">"Number of Hosts"</span>) <span class="sc">+</span>  <span class="co"># Labels for axes</span></span>
+<span id="cb43-11"><a href="#cb43-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggtitle</span>(<span class="st">"Bar Plot of regional Honeypot hosts vs. Number of hosts in particular region"</span>) <span class="sc">+</span>  <span class="co"># Title for the plot</span></span>
+<span id="cb43-12"><a href="#cb43-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Warning: Use of `hosts_sum$host` is discouraged.
 ℹ Use `host` instead.</code></pre>
@@ -494,36 +497,36 @@ e.g.:
 <div class="cell-output-display">
 <p><img src="KeshavRDiary_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid" width="672"></p>
 </div>
-<div class="sourceCode cell-code" id="cb44"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="co">#below visualizations will show simple freququncy of data transmission in terms of ports and protocols. for example which protocol was high frequency etc.</span></span>
-<span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a><span class="co">#plotting a histogram to show the relation between source port number ranges and their values</span></span>
-<span id="cb44-3"><a href="#cb44-3" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(cybersecdata2_final<span class="sc">$</span>spt, </span>
-<span id="cb44-4"><a href="#cb44-4" aria-hidden="true" tabindex="-1"></a>     <span class="at">main =</span> <span class="st">"Frequency of source ports probed in the honeypot servers"</span>,</span>
-<span id="cb44-5"><a href="#cb44-5" aria-hidden="true" tabindex="-1"></a>     <span class="at">xlab =</span> <span class="st">"Port Number Range"</span>,</span>
-<span id="cb44-6"><a href="#cb44-6" aria-hidden="true" tabindex="-1"></a>     <span class="at">border =</span> <span class="st">"purple"</span>, </span>
-<span id="cb44-7"><a href="#cb44-7" aria-hidden="true" tabindex="-1"></a>     <span class="at">col =</span> <span class="st">"orange"</span>,)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb46"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a><span class="co">#below visualizations will show simple freququncy of data transmission in terms of ports and protocols. for example which protocol was high frequency etc.</span></span>
+<span id="cb46-2"><a href="#cb46-2" aria-hidden="true" tabindex="-1"></a><span class="co">#plotting a histogram to show the relation between source port number ranges and their values</span></span>
+<span id="cb46-3"><a href="#cb46-3" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(cybersecdata2_final<span class="sc">$</span>spt, </span>
+<span id="cb46-4"><a href="#cb46-4" aria-hidden="true" tabindex="-1"></a>     <span class="at">main =</span> <span class="st">"Frequency of source ports probed in the honeypot servers"</span>,</span>
+<span id="cb46-5"><a href="#cb46-5" aria-hidden="true" tabindex="-1"></a>     <span class="at">xlab =</span> <span class="st">"Port Number Range"</span>,</span>
+<span id="cb46-6"><a href="#cb46-6" aria-hidden="true" tabindex="-1"></a>     <span class="at">border =</span> <span class="st">"purple"</span>, </span>
+<span id="cb46-7"><a href="#cb46-7" aria-hidden="true" tabindex="-1"></a>     <span class="at">col =</span> <span class="st">"orange"</span>,)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <p><img src="KeshavRDiary_files/figure-html/unnamed-chunk-6-2.png" class="img-fluid" width="672"></p>
 </div>
-<div class="sourceCode cell-code" id="cb45"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a><span class="co">#plotting a histogram to show the relation between destination port number ranges and their values</span></span>
-<span id="cb45-2"><a href="#cb45-2" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(cybersecdata2_final<span class="sc">$</span>dpt, </span>
-<span id="cb45-3"><a href="#cb45-3" aria-hidden="true" tabindex="-1"></a>     <span class="at">main =</span> <span class="st">"Frequency of destination ports probed in the honeypot servers"</span>,</span>
-<span id="cb45-4"><a href="#cb45-4" aria-hidden="true" tabindex="-1"></a>     <span class="at">xlab =</span> <span class="st">"Port Number Range"</span>,</span>
-<span id="cb45-5"><a href="#cb45-5" aria-hidden="true" tabindex="-1"></a>     <span class="at">border =</span> <span class="st">"pink"</span>, </span>
-<span id="cb45-6"><a href="#cb45-6" aria-hidden="true" tabindex="-1"></a>     <span class="at">col =</span> <span class="st">"green"</span>,)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb47"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a><span class="co">#plotting a histogram to show the relation between destination port number ranges and their values</span></span>
+<span id="cb47-2"><a href="#cb47-2" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(cybersecdata2_final<span class="sc">$</span>dpt, </span>
+<span id="cb47-3"><a href="#cb47-3" aria-hidden="true" tabindex="-1"></a>     <span class="at">main =</span> <span class="st">"Frequency of destination ports probed in the honeypot servers"</span>,</span>
+<span id="cb47-4"><a href="#cb47-4" aria-hidden="true" tabindex="-1"></a>     <span class="at">xlab =</span> <span class="st">"Port Number Range"</span>,</span>
+<span id="cb47-5"><a href="#cb47-5" aria-hidden="true" tabindex="-1"></a>     <span class="at">border =</span> <span class="st">"pink"</span>, </span>
+<span id="cb47-6"><a href="#cb47-6" aria-hidden="true" tabindex="-1"></a>     <span class="at">col =</span> <span class="st">"green"</span>,)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <p><img src="KeshavRDiary_files/figure-html/unnamed-chunk-6-3.png" class="img-fluid" width="672"></p>
 </div>
-<div class="sourceCode cell-code" id="cb46"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a><span class="co">#now I am grouping different protocols and try to show their percentage share in the data collected using both a bar plot and a  pie chart</span></span>
-<span id="cb46-2"><a href="#cb46-2" aria-hidden="true" tabindex="-1"></a><span class="co">#PLEASE </span><span class="al">NOTE</span><span class="co"> THAT I AM NOT TAKING SAMPLED DATA HERE. I AM RUNNING THIS ON THE ORIGINAL DATASET.</span></span>
-<span id="cb46-3"><a href="#cb46-3" aria-hidden="true" tabindex="-1"></a>proto_groupby <span class="ot">&lt;-</span> cybersecdata2 <span class="sc">%&gt;%</span> <span class="fu">group_by</span>(proto)</span>
-<span id="cb46-4"><a href="#cb46-4" aria-hidden="true" tabindex="-1"></a>proto_sum <span class="ot">&lt;-</span> <span class="fu">summarise</span>(proto_groupby, <span class="at">num_proto =</span> <span class="fu">n</span>())</span>
-<span id="cb46-5"><a href="#cb46-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb46-6"><a href="#cb46-6" aria-hidden="true" tabindex="-1"></a><span class="co">#this is the bar plot showing the freuqncy of different 3 protocols</span></span>
-<span id="cb46-7"><a href="#cb46-7" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(proto_sum, <span class="fu">aes</span>(<span class="at">x =</span> proto_sum<span class="sc">$</span>proto, <span class="at">y =</span> proto_sum<span class="sc">$</span>num_proto)) <span class="sc">+</span></span>
-<span id="cb46-8"><a href="#cb46-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">stat =</span> <span class="st">"identity"</span>, <span class="at">fill =</span> <span class="st">"yellow"</span>) <span class="sc">+</span>  <span class="co"># Bar plot with identity statistic</span></span>
-<span id="cb46-9"><a href="#cb46-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Name of protocols"</span>, <span class="at">y =</span> <span class="st">"Frequency of occurence"</span>) <span class="sc">+</span>  <span class="co"># Labels for axes</span></span>
-<span id="cb46-10"><a href="#cb46-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggtitle</span>(<span class="st">"Protocols observed vs. frequency of them occuring"</span>) <span class="sc">+</span>  <span class="co"># Title for the plot</span></span>
-<span id="cb46-11"><a href="#cb46-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb48"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a><span class="co">#now I am grouping different protocols and try to show their percentage share in the data collected using both a bar plot and a  pie chart</span></span>
+<span id="cb48-2"><a href="#cb48-2" aria-hidden="true" tabindex="-1"></a><span class="co">#PLEASE </span><span class="al">NOTE</span><span class="co"> THAT I AM NOT TAKING SAMPLED DATA HERE. I AM RUNNING THIS ON THE ORIGINAL DATASET.</span></span>
+<span id="cb48-3"><a href="#cb48-3" aria-hidden="true" tabindex="-1"></a>proto_groupby <span class="ot">&lt;-</span> cybersecdata2 <span class="sc">%&gt;%</span> <span class="fu">group_by</span>(proto)</span>
+<span id="cb48-4"><a href="#cb48-4" aria-hidden="true" tabindex="-1"></a>proto_sum <span class="ot">&lt;-</span> <span class="fu">summarise</span>(proto_groupby, <span class="at">num_proto =</span> <span class="fu">n</span>())</span>
+<span id="cb48-5"><a href="#cb48-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb48-6"><a href="#cb48-6" aria-hidden="true" tabindex="-1"></a><span class="co">#this is the bar plot showing the freuqncy of different 3 protocols</span></span>
+<span id="cb48-7"><a href="#cb48-7" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(proto_sum, <span class="fu">aes</span>(<span class="at">x =</span> proto_sum<span class="sc">$</span>proto, <span class="at">y =</span> proto_sum<span class="sc">$</span>num_proto)) <span class="sc">+</span></span>
+<span id="cb48-8"><a href="#cb48-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">stat =</span> <span class="st">"identity"</span>, <span class="at">fill =</span> <span class="st">"yellow"</span>) <span class="sc">+</span>  <span class="co"># Bar plot with identity statistic</span></span>
+<span id="cb48-9"><a href="#cb48-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Name of protocols"</span>, <span class="at">y =</span> <span class="st">"Frequency of occurence"</span>) <span class="sc">+</span>  <span class="co"># Labels for axes</span></span>
+<span id="cb48-10"><a href="#cb48-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggtitle</span>(<span class="st">"Protocols observed vs. frequency of them occuring"</span>) <span class="sc">+</span>  <span class="co"># Title for the plot</span></span>
+<span id="cb48-11"><a href="#cb48-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Warning: Use of `proto_sum$proto` is discouraged.
 ℹ Use `proto` instead.</code></pre>
@@ -535,11 +538,11 @@ e.g.:
 <div class="cell-output-display">
 <p><img src="KeshavRDiary_files/figure-html/unnamed-chunk-6-4.png" class="img-fluid" width="672"></p>
 </div>
-<div class="sourceCode cell-code" id="cb49"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a><span class="co">#plotting a pie chart for the above scenario</span></span>
-<span id="cb49-2"><a href="#cb49-2" aria-hidden="true" tabindex="-1"></a>frequency_of_proto <span class="ot">&lt;-</span> proto_sum<span class="sc">$</span>num_proto</span>
-<span id="cb49-3"><a href="#cb49-3" aria-hidden="true" tabindex="-1"></a>proto_lbls <span class="ot">&lt;-</span> proto_sum<span class="sc">$</span>proto</span>
-<span id="cb49-4"><a href="#cb49-4" aria-hidden="true" tabindex="-1"></a>myColorPal2 <span class="ot">&lt;-</span> <span class="fu">brewer.pal</span>(<span class="dv">5</span>, <span class="st">"Set3"</span>)</span>
-<span id="cb49-5"><a href="#cb49-5" aria-hidden="true" tabindex="-1"></a><span class="fu">pie</span>(frequency_of_proto, <span class="at">labels =</span> <span class="fu">paste</span>(proto_lbls, <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>, <span class="fu">percent</span>(frequency_of_proto <span class="sc">/</span> <span class="fu">sum</span>(frequency_of_proto))), <span class="at">col =</span> myColorPal2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb51"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a><span class="co">#plotting a pie chart for the above scenario</span></span>
+<span id="cb51-2"><a href="#cb51-2" aria-hidden="true" tabindex="-1"></a>frequency_of_proto <span class="ot">&lt;-</span> proto_sum<span class="sc">$</span>num_proto</span>
+<span id="cb51-3"><a href="#cb51-3" aria-hidden="true" tabindex="-1"></a>proto_lbls <span class="ot">&lt;-</span> proto_sum<span class="sc">$</span>proto</span>
+<span id="cb51-4"><a href="#cb51-4" aria-hidden="true" tabindex="-1"></a>myColorPal2 <span class="ot">&lt;-</span> <span class="fu">brewer.pal</span>(<span class="dv">5</span>, <span class="st">"Set3"</span>)</span>
+<span id="cb51-5"><a href="#cb51-5" aria-hidden="true" tabindex="-1"></a><span class="fu">pie</span>(frequency_of_proto, <span class="at">labels =</span> <span class="fu">paste</span>(proto_lbls, <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>, <span class="fu">percent</span>(frequency_of_proto <span class="sc">/</span> <span class="fu">sum</span>(frequency_of_proto))), <span class="at">col =</span> myColorPal2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <p><img src="KeshavRDiary_files/figure-html/unnamed-chunk-6-5.png" class="img-fluid" width="672"></p>
 </div>
@@ -576,6 +579,102 @@ e.g.:
 <figure class="figure">
 <p><img src="gitcode.png" class="img-fluid figure-img"></p>
 <figcaption class="figure-caption">Github First Ever Commit</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="date-8th-march-2024" class="level1">
+<h1>Date:-8th March 2024</h1>
+</section>
+<section id="time-1120-pm" class="level1">
+<h1>Time:-11:20 PM</h1>
+<section id="started-working-on-assignment-3.-first-step-is-to-enhance-the-honeypot-dataset-i-used-in-assignment-1." class="level2">
+<h2 class="anchored" data-anchor-id="started-working-on-assignment-3.-first-step-is-to-enhance-the-honeypot-dataset-i-used-in-assignment-1.">Started working on Assignment 3. First step is to enhance the honeypot dataset I used in assignment 1.</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb52"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Perfming more analysis on the honeypot dataset</span></span>
+<span id="cb52-2"><a href="#cb52-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-3"><a href="#cb52-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-4"><a href="#cb52-4" aria-hidden="true" tabindex="-1"></a>honeypotdataset <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"marx.csv"</span>)</span>
+<span id="cb52-5"><a href="#cb52-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-6"><a href="#cb52-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-7"><a href="#cb52-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-8"><a href="#cb52-8" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(honeypotdataset)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   datetime             host                src               proto          
+ Length:451581      Length:451581      Min.   :1.678e+07   Length:451581     
+ Class :character   Class :character   1st Qu.:1.169e+09   Class :character  
+ Mode  :character   Mode  :character   Median :2.031e+09   Mode  :character  
+                                       Mean   :2.155e+09                     
+                                       3rd Qu.:3.165e+09                     
+                                       Max.   :3.758e+09                     
+                                                                             
+      type             spt             dpt       
+ Min.   : 0.0     Min.   :    0   Min.   :    0  
+ 1st Qu.: 8.0     1st Qu.: 6000   1st Qu.:  445  
+ Median : 8.0     Median : 6000   Median : 1433  
+ Mean   : 7.5     Mean   :18685   Mean   : 6684  
+ 3rd Qu.: 8.0     3rd Qu.:33461   3rd Qu.: 3389  
+ Max.   :13.0     Max.   :65535   Max.   :65500  
+ NA's   :406770   NA's   :44811   NA's   :44811  </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb54"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a><span class="co">#taken this code from the original dataset website's blog post. You can check it out here.</span></span>
+<span id="cb54-2"><a href="#cb54-2" aria-hidden="true" tabindex="-1"></a><span class="co">#https://datadrivensecurity.info/blog/posts/2014/Jan/blander-part1/ </span></span>
+<span id="cb54-3"><a href="#cb54-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-4"><a href="#cb54-4" aria-hidden="true" tabindex="-1"></a><span class="co">#first we change the format of the date type column.</span></span>
+<span id="cb54-5"><a href="#cb54-5" aria-hidden="true" tabindex="-1"></a><span class="co">#why we are doing this is basically to find the frequency of transmission on a particular host</span></span>
+<span id="cb54-6"><a href="#cb54-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-7"><a href="#cb54-7" aria-hidden="true" tabindex="-1"></a>honeypotdataset<span class="sc">$</span>day <span class="ot">&lt;-</span> <span class="fu">as.Date</span>(honeypotdataset<span class="sc">$</span>datetime, <span class="at">format =</span> <span class="st">"%Y-%m-%d %H:%M:%S"</span>)</span>
+<span id="cb54-8"><a href="#cb54-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-9"><a href="#cb54-9" aria-hidden="true" tabindex="-1"></a><span class="co">#here we are just adding a new frequency column</span></span>
+<span id="cb54-10"><a href="#cb54-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-11"><a href="#cb54-11" aria-hidden="true" tabindex="-1"></a>honeypotdataset<span class="sc">$</span>freq <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>)</span>
+<span id="cb54-12"><a href="#cb54-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-13"><a href="#cb54-13" aria-hidden="true" tabindex="-1"></a><span class="co">#here we are adding the number of host for a particular day and showing it as frequency.</span></span>
+<span id="cb54-14"><a href="#cb54-14" aria-hidden="true" tabindex="-1"></a><span class="co">#more about aggregate functions and tilde symbol on below links</span></span>
+<span id="cb54-15"><a href="#cb54-15" aria-hidden="true" tabindex="-1"></a><span class="co">#https://medium.com/anu-perumalsamy/what-does-mean-in-r-18cecd1b223f#:~:text='~(tilde)'%20is%20an%20operator%20that%20splits%20the%20left,the%20set%20of%20feature%20variables.</span></span>
+<span id="cb54-16"><a href="#cb54-16" aria-hidden="true" tabindex="-1"></a><span class="co">#https://www.geeksforgeeks.org/how-to-use-aggregate-function-in-r/</span></span>
+<span id="cb54-17"><a href="#cb54-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-18"><a href="#cb54-18" aria-hidden="true" tabindex="-1"></a>hosts <span class="ot">&lt;-</span> <span class="fu">aggregate</span>(freq <span class="sc">~</span> day <span class="sc">+</span> host, <span class="at">data =</span> honeypotdataset, <span class="at">FUN =</span> sum)</span>
+<span id="cb54-19"><a href="#cb54-19" aria-hidden="true" tabindex="-1"></a><span class="co">#checking how the dataframe looks like by calling the first few columns</span></span>
+<span id="cb54-20"><a href="#cb54-20" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(hosts)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>         day       host freq
+1 2013-03-03 groucho-eu    6
+2 2013-03-04 groucho-eu  104
+3 2013-03-05 groucho-eu   99
+4 2013-03-06 groucho-eu   71
+5 2013-03-07 groucho-eu  112
+6 2013-03-08 groucho-eu   73</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="date-14th-march-2024" class="level1">
+<h1>Date:-14th March 2024</h1>
+</section>
+<section id="time-945-am" class="level1">
+<h1>Time:-9:45 AM</h1>
+<section id="making-a-separate-repository-for-my-assignment-1-and-commiting-my-new-code-to-the-assignment-2-repository" class="level2">
+<h2 class="anchored" data-anchor-id="making-a-separate-repository-for-my-assignment-1-and-commiting-my-new-code-to-the-assignment-2-repository">Making a separate repository for my assignment 1 and commiting my new code to the assignment 2 repository</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="giterror.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">GitBash Error</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="date-15th-march-2024" class="level1">
+<h1>Date:-15th March 2024</h1>
+</section>
+<section id="time-645-am" class="level1">
+<h1>Time:-6:45 AM</h1>
+<section id="finally-fixed-my-github-repository-error.-the-reason-for-the-error-was-repositories-not-being-up-to-date-with-my-local-so-i-had-to-do-a-pull-first-before-pushing" class="level2">
+<h2 class="anchored" data-anchor-id="finally-fixed-my-github-repository-error.-the-reason-for-the-error-was-repositories-not-being-up-to-date-with-my-local-so-i-had-to-do-a-pull-first-before-pushing">Finally fixed my github repository error. The reason for the error was repositories not being up to date with my local so i had to do a pull first before pushing</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="assign1git.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">New Assignment1 Repository</figcaption>
 </figure>
 </div>
 </section>
